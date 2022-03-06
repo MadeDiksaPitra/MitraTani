@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/background_homepage2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/grey"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/ibtn_belanja"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/cricle_button"
+        app:layout_constraintStart_toStartOf="@+id/searchView"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:srcCompat="@drawable/belanja" />
+
+    <ImageButton
+        android:id="@+id/ibtn_tanyaahli"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/cricle_button"
+        app:layout_constraintEnd_toEndOf="@+id/iv_saldo"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_belanja"
+        app:srcCompat="@drawable/tanya_ahli" />
+
+    <ImageButton
+        android:id="@+id/ibtn_sewaalat"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/cricle_button"
+        app:layout_constraintStart_toEndOf="@+id/ibtn_belanja"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_belanja"
+        app:srcCompat="@drawable/sewa_alat" />
+
+    <ImageButton
+        android:id="@+id/ibtn_forumdiskusi"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/cricle_button"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_tanyaahli"
+        app:layout_constraintStart_toEndOf="@+id/ibtn_sewaalat"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_belanja"
+        app:srcCompat="@drawable/forum_diskusi" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/iv_saldo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_saldo"
+        app:layout_constraintTop_toBottomOf="@+id/iv_saldo" />
+
+    <ImageView
+        android:id="@+id/iv_saldo"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:srcCompat="@drawable/saldo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_homepage" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"
+        app:srcCompat="@drawable/logo_burger" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notif" />
+
+</android.support.constraint.ConstraintLayout>
