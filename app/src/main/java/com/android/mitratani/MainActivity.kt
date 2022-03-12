@@ -16,9 +16,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
+
         binding.btnMasuk.setOnClickListener {
             val intent = Intent(this, DetailActivity::class.java)
             startActivity(intent)
+
         }
 
     }
