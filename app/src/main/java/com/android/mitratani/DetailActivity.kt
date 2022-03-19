@@ -17,6 +17,11 @@ class DetailActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+        binding.ibtnBelanja.setOnClickListener {
+            val intent = Intent(this, Belanja::class.java)
+            startActivity(intent)
+        }
+
         binding.ibtnTanyaahli.setOnClickListener {
             val intent = Intent(this, TanyaAhli::class.java)
             startActivity(intent)

@@ -14,6 +14,12 @@
             android:name=".TanyaAhliRincian"
             android:exported="false"/>
         <activity
+            android:name=".Belanja"
+            android:exported="false"/>
+        <activity
+            android:name=".BelanjaCo"
+            android:exported="false"/>
+        <activity
             android:name=".TanyaAhli"
             android:exported="false"/>
         <activity

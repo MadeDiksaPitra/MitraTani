@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">MitraTani</string>
     <string name="masuk">Masuk</string>
+    <string name="tanyaahli">Tanya Ahli</string>
+    <string name="pakar_pertanian">Pakar Pertanian</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="ahli0">Ahmad Budi S.Agr</string>
+    <string name="isi">Isi</string>
+    <string name="nama">Nama</string>
+    <string name="apa_kata">Apa kata ahli?</string>
+    <string name="jadwal0">Senin - Sabtu | 08:00 - 17:00</string>
+    <string name="belanja_bold">BELANJA</string>
+    <string name="kebutuhan_pokok">Kebutuhan pokok</string>
+    <string name="harga">Harga</string>
 </resources>

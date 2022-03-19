@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_hitam" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:text="@string/belanja_bold"
+        android:textStyle="bold"
+        android:textColor="@color/dark_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cart" />
+
+    <SearchView
+        android:id="@+id/searchView2"
+        android:background="@color/white"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView2"
+        app:srcCompat="@drawable/belanja_preview" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/kebutuhan_pokok"
+        android:textColor="@color/dark_green"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageButton15"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton15" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="65dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:srcCompat="@drawable/lihat_semua" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="175dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/belanja_kotak" />
+
+    <ImageButton
+        android:id="@+id/imageButton18"
+        android:layout_width="175dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/imageButton17"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/belanja_kotak" />
+
+    <ImageButton
+        android:id="@+id/ibtn_produk0"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton18"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="@+id/imageButton17"
+        app:layout_constraintTop_toTopOf="@+id/imageButton17"
+        app:srcCompat="@drawable/belanja_kotakhijau" />
+
+    <ImageButton
+        android:id="@+id/imageButton20"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton18"
+        app:layout_constraintStart_toEndOf="@+id/imageButton17"
+        app:layout_constraintTop_toTopOf="@id/ibtn_produk0"
+        app:srcCompat="@drawable/belanja_kotakhijau" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold"
+        android:text="@string/nama"
+        app:layout_constraintStart_toStartOf="@id/ibtn_produk0"
+        app:layout_constraintTop_toBottomOf="@id/ibtn_produk0" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/harga"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/nama"
+        android:textStyle="bold"
+        android:textColor="@color/dark_green"
+        app:layout_constraintStart_toStartOf="@+id/imageButton20"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton20" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/harga"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+</android.support.constraint.ConstraintLayout>
